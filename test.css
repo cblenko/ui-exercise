@@ -11,12 +11,28 @@ header > nav {
     text-align: center; 
 }
 
-header > nav a.nav-link { 
+header > nav a {
     padding: 15px 40px 19px; 
     text-decoration: none; 
-    border-top: 4px solid #439ee9; 
     color: black; 
     display: inline-block; 
+    
+}
+header > nav a#side-bar {
+    float: right;
+    height: 100%;
+    padding-top: 19px;
+    padding-right: 44px;
+    position: relative;
+}
+
+header > nav a#side-bar:hover {
+    border-right: 4px solid #439ee9;
+    padding-right: 40px;
+}
+
+header > nav a.nav-link { 
+    border-top: 4px solid #439ee9; 
 }
 header > nav a.nav-link:hover { 
     padding: 19px 40px 15px;
@@ -25,6 +41,7 @@ header > nav a.nav-link:hover {
 }
 
 main { display: inline-block; position: relative; padding: 0 30% 0 0; margin: 0 0 20px 0; }
+
 main > section {
     height: 100%;
     padding: 0 20px;
@@ -82,6 +99,8 @@ footer p { text-align: center; line-height: 100px; font-style: italic; }
     header > nav > #nav-items a:hover { background-color: #eee; }
     header > nav > #nav-toggle { width: 20px; margin: 0 auto; }
     header > nav > #nav-toggle span { display: block; border-bottom: 3px solid black; font-size: 0px; height: 8px; }
+
+    header > nav a#side-bar { display: none; }
 
     main { padding: 10px 10px 0; display: block; }
     main > section { padding: 0; }
